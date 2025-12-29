@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>CALCULATOR APP</h1>
+        <form action="submit">
+            <label for="num1">Enter your first number</label>
+            <input type="number" id="num1" placeholder="Enter number"><br><br>
+            <label for="num2">Enter your second number</label>
+            <input type="number" id="num2" placeholder="Enter number"><br><br>
+
+            <div class="buttons">
+                <button type="button" onclick="multiply()">x</button>
+
+                <button type="button" onclick="add()">+</button>
+
+                <button type="button" onclick="subtract()">-</button>
+
+                <button type="button" onclick="divide()">/</button>
+
+                <button type="button" onclick="square()">x&sup2;</button>
+
+                <button type="button" onclick="cube()">x&sup3;</button>
+
+                <button type="reset" id="reset" onclick="clearCalculator()">C</button>
+
+                <h2 id="result">RESULT: </h2>
+
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
